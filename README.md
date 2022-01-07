@@ -1,3 +1,7 @@
+# Shopify frontend challenge
+
+make a website that uses a nasa api to display images
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
