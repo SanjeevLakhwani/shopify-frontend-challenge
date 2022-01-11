@@ -11,6 +11,8 @@ const chakraTheme = extendTheme({
             "html, body": {
                 color: theme.text,
                 "background-color": theme.background,
+                "font-family": "'Be Vietnam Pro', sans-serif",
+                "font-weight": "light",
             },
             a: {
                 color: theme.primaryColor,

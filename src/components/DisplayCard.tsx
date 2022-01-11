@@ -62,9 +62,14 @@ const DisplayCard = ({
                         isLiked={isLiked}
                     />
                 </Container>
-                <Text>{date.toString().substring(0, 10)}</Text>
-                <Text noOfLines={1}>{title}</Text>
-                <Text noOfLines={3}>{desc}</Text>
+                <Container p="10px">
+                    <Text noOfLines={2}>{`${date
+                        .toString()
+                        .substring(0, 10)} • ${title}`}</Text>
+                    <Text noOfLines={4} fontWeight="light">
+                        {desc}
+                    </Text>
+                </Container>
             </Box>
         </div>
     );

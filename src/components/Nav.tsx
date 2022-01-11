@@ -23,6 +23,12 @@ const Nav = ({ setQuery }: { setQuery: Dispatch<SetStateAction<string>> }) => {
         console.log("i was clicked");
     };
 
+    const onKeyDown = (ev: React.KeyboardEvent<HTMLInputElement>) => {
+        if (ev.keyCode === 13) {
+            onSearchClick();
+        }
+    };
+
     return (
         <div style={{ position: "sticky", top: "0", zIndex: 10 }}>
             <Box
@@ -43,13 +49,15 @@ const Nav = ({ setQuery }: { setQuery: Dispatch<SetStateAction<string>> }) => {
                     align="center"
                     justify="space-between"
                 >
-                    <Heading>Fly me to the Moon</Heading>
+                    <Heading fontWeight="light">Fly me to the Moon</Heading>
                     <InputGroup>
                         <Input
                             placeholder="Search"
                             m="1"
                             onChange={onInputChange}
                             value={input}
+                            onKeyDown={onKeyDown}
+                            focusBorderColor={theme.primaryColor}
                         />
                         <IconButton
                             bg={theme.primaryColor}

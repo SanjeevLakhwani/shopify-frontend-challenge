@@ -14,7 +14,7 @@ function App() {
             .then((response) => response.json())
             .then((res: APIResponse) => res.collection.items)
             .then((items) => {
-                setImages(items.slice(0, 10));
+                setImages(items.slice(0, 12));
             });
     }, [query]);
 

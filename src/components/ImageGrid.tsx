@@ -2,6 +2,7 @@ import { Container, SimpleGrid } from "@chakra-ui/react";
 import React, { useState } from "react";
 import DisplayCard from "./DisplayCard";
 import { Item } from "../misc/api";
+import FadeIn from "react-fade-in";
 
 function useForceUpdate() {
     const [_, setValue] = useState(0); // integer state
@@ -44,8 +45,13 @@ const ImageGrid = ({ data }: { data: Item[] }) => {
 
     return (
         <div>
-            <Container maxW={"container.xl"} marginTop="30px">
-                <SimpleGrid minChildWidth="400px" spacingX="5" spacingY="10">
+            <Container maxW={"container.xl"} marginY="40px">
+                <SimpleGrid
+                    as={FadeIn}
+                    minChildWidth="400px"
+                    spacingX="5"
+                    spacingY="10"
+                >
                     {rows}
                 </SimpleGrid>
             </Container>
