@@ -1,4 +1,4 @@
-import { Box, Container, Image, Text } from "@chakra-ui/react";
+import { Box, Container, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { getImageLink } from "../misc/api";
 import theme from "../misc/theme";

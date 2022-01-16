@@ -1,8 +1,10 @@
 const API_ENDPOINT = "https://images-api.nasa.gov/search";
-export default (query: String) => {
+const getQueryResults = (query: String) => {
     const query_url = `${API_ENDPOINT}?q=${query}&media_type=image`;
     return fetch(query_url);
 };
+
+export default getQueryResults;
 
 export const getImageLink = (href: string) => {
     return fetch(href);

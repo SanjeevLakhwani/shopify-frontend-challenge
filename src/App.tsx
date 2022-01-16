@@ -2,7 +2,7 @@ import { Heading } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import ImageGrid from "./components/ImageGrid";
 import Nav from "./components/Nav";
-import apiGet, { APIResponse, DefaultResponse, Item } from "./misc/api";
+import apiGet, { APIResponse, Item } from "./misc/api";
 import theme from "./misc/theme";
 
 function App() {
