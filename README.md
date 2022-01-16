@@ -11,4 +11,4 @@ Given the time Constraints of being a student, the website was not built with a 
 - LOVE ♥
 
 # Hosted @
-Netlify https://61e423f674ba58000a2c2e3e--vigorous-hugle-989146.netlify.app/
+Netlify [https://vigorous-hugle-989146.netlify.app/](https://vigorous-hugle-989146.netlify.app/)
