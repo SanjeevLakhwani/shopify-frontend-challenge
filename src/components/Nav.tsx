@@ -49,8 +49,15 @@ const Nav = ({ setQuery }: { setQuery: Dispatch<SetStateAction<string>> }) => {
                     align="center"
                     justify="space-between"
                 >
-                    <Heading fontWeight="light">Fly me to the Moon</Heading>
-                    <InputGroup>
+                    <Heading
+                        fontWeight="bold"
+                        fontFamily="monospace"
+                        color={theme.text}
+                        p="2"
+                    >
+                        NASAlib
+                    </Heading>
+                    <InputGroup p="2">
                         <Input
                             placeholder="Search"
                             m="1"
@@ -58,9 +65,12 @@ const Nav = ({ setQuery }: { setQuery: Dispatch<SetStateAction<string>> }) => {
                             value={input}
                             onKeyDown={onKeyDown}
                             focusBorderColor={theme.primaryColor}
+                            color={theme.text}
+                            borderColor={`${theme.text}`}
                         />
                         <IconButton
                             bg={theme.primaryColor}
+                            color={theme.text}
                             aria-label="Search"
                             icon={<SearchIcon />}
                             m="1"

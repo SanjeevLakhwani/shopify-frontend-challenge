@@ -8,12 +8,12 @@ export interface ITheme {
 }
 
 const theme: ITheme = {
-    primaryColor: "#c3073f",
-    text: "#FFF",
-    textAlt: "#4E4E50",
+    primaryColor: "#63f8fc",
+    text: "#283030",
+    textAlt: "#a8f1ff",
     border: "#950740",
-    background: "#1A1A1D",
-    backgroundAlt: "#6F2232",
+    background: "#e0ffff",
+    backgroundAlt: "#9debed",
 };
 
 export default theme;

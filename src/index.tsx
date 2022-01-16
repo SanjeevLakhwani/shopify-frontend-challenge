@@ -17,6 +17,9 @@ const chakraTheme = extendTheme({
             a: {
                 color: theme.primaryColor,
             },
+            "::placeholder": {
+                color: `${theme.text}40`,
+            },
         },
     },
 });
